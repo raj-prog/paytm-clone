@@ -4,7 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Paytm clone</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            body: 'Inter, sans - serif',
+          },
+          extend: {
+            colors: {
+              white: '#fff',
+              darkblue: '#002970',
+              lightblue: '#00BAF2',
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <header class="bg-white px-16 pt-3 shadow-xl">
+      <nav class="flex justify-between items-center py-4">
+        <div>
+          <img
+            src="./assets/paytm_logo.png"
+            class="w-44 cursor-pointer"
+            alt="paytm_logo"
+          />
+        </div>
+        <div class="flex gap-8 font-semibold text-[17px]">
+          <a href="#">Paytm for consumer</a>
+          <a href="#">Paytm for Business</a>
+          <a href="#">Company</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Career</a>
+        </div>
+        <div
+          class="flex items-center justify-between gap-2 bg-lightblue text-white pr-0 pl-3 py-px rounded-full font-bold hover:bg-darkblue"
+        >
+          <span>Sign In</span>
+          <svg
+            class="hover:fill-lightblue"
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="17" cy="17" r="17" fill="#002970" />
+            <circle cx="17" cy="14.7331" r="7.93333" fill="white" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
