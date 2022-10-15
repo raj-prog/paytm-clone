@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="https://paytm.com/favicon.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Paytm clone</title>
     <script>
@@ -50,7 +51,7 @@
             alt="paytm_logo"
           />
         </div>
-        <div class="flex gap-8 font-semibold text-[17px]">
+        <div class="lg:flex gap-8 font-semibold hidden text-[17px]">
           <a href="#">Paytm for consumer</a>
           <a href="#">Paytm for Business</a>
           <a href="#">Company</a>
@@ -61,7 +62,7 @@
           class="flex items-center gap-2 bg-lightblue text-white pr-0 pl-3 py-px rounded-full font-bold hover:bg-darkblue"
         >
           <span>Sign In</span>
-          <svg class="hover:lightblue" width="34" height="34">
+          <svg width="34" height="34">
             <circle cx="17" cy="17" r="17" fill="#002970" />
             <circle cx="17" cy="14.733" r="7.933" fill="#fff" />
             <path
@@ -81,7 +82,9 @@
         <span class="font-medium">Learn More.</span>
       </p>
 
-      <main class="flex justify-between items-center mt-28 bg-white pb-24">
+      <main
+        class="flex lg:flex-row flex-col-reverse justify-between items-center mt-28 bg-white pb-24"
+      >
         <div class="ml-36 flex flex-col justify-between gap-8 items-start">
           <div>
             <img
@@ -1077,13 +1080,13 @@
             Download Paytm App <br />
             to Pay from anywhere
           </h2>
-          <div>
+          <div class="cursor-pointer">
             <img
               src="https://assetscdn1.paytm.com/frontendcommonweb/71229188.svg"
               alt="apple"
             />
           </div>
-          <div>
+          <div class="cursor-pointer">
             <img
               src="https://assetscdn1.paytm.com/frontendcommonweb/33d9d7f1.svg"
               alt="google"
@@ -1091,19 +1094,19 @@
           </div>
         </div>
         <div class="flex gap-8 items-center justify-end">
-          <div>
+          <div class="cursor-pointer">
             <img
               src="https://assetscdn1.paytm.com/frontendcommonweb/508b83d1.svg"
               alt="twitter"
             />
           </div>
-          <div>
+          <div class="cursor-pointer">
             <img
               src="https://assetscdn1.paytm.com/frontendcommonweb/f9c15a7a.svg"
               alt="instagram"
             />
           </div>
-          <div>
+          <div class="cursor-pointer">
             <img
               src="https://assetscdn1.paytm.com/frontendcommonweb/ad9d15ee.svg"
               alt="facebook"
